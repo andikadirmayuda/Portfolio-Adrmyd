@@ -1,1 +1,1 @@
-const document = document.querySelector(".navbar");
+const document = document.querySelector(".navbar, .footer");

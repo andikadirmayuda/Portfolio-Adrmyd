@@ -9,16 +9,16 @@
     <!-- boxicons -->
     <link rel="stylesheet" href="vendors/boxicons/css/boxicons.min.css" />
     <!-- swiperjs -->
-    <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-/>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <!-- Feather  -->
+    <script src="https://unpkg.com/feather-icons"></script>
     <!-- css -->
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand">
-      <div class="container-fluid">
+      <div class="container">
         <a class="navbar-brand fw-bold ms-5 text-white" href="#">Adrmyd</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -203,17 +203,17 @@
     <div class="container">
       <p class="text-orange fw-semibold">Timeline</p>
       <h2 class="section-title text-white mb-5">Roadmap</h2>
-      <div class="row py-3 border-bottom">
+      <div class="row py-3 border-bottom text-white">
         <div class="col-md-4">July, 2023 - Today</div>
         <div class="col-md-4">Studying</div>
         <div class="col-md-4">Home</div>
       </div>
-      <div class="row py-3 border-bottom">
+      <div class="row py-3 border-bottom text-white">
         <div class="col-md-4">July, 2023 - Sunday</div>
         <div class="col-md-4">Studying</div>
         <div class="col-md-4">Home</div>
       </div>
-      <div class="row py-3 border-bottom">
+      <div class="row py-3 border-bottom text-white">
         <div class="col-md-4">July, 2023 - Monday</div>
         <div class="col-md-4">Studying</div>
         <div class="col-md-4">Home</div>
@@ -363,11 +363,29 @@
 
   </section>
 
-  <footer class="py-3" id="footer">
-    <div class="container">
-      <p class="text-white fs-7 mb-0 ">Copyright &copy; 2023 | Adrmyd</p>
+  <!-- Footer Start-->
+  <footer class="footer bg-black">
+    <div class="socials">
+      <a href="#"><i data-feather="youtube"></i></a>
+      <a href="#"><i data-feather="instagram"></i></a>
+      <a href="#"><i data-feather="twitter"></i></a>
+      <a href="#"><i data-feather="facebook"></i></a>
+    </div>
+
+    <div class="links text-white">
+      <a href="#">Home</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#skills">Skills</a>
+      <a href="#Timeline">Timeline</a>
+      <a href="#News">News</a>
+      <a href="#Contact">Contact</a>
+    </div>
+
+    <div class="credit">
+      <p>Create by <a href="">Adrmyd</a> | &copy; 2023</p>
     </div>
   </footer>
+  <!-- Footer End-->
 
   <!-- script swiper -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
@@ -391,6 +409,10 @@
             },
         }
       });
+    </script>
+    <!-- Feather -->
+    <script>
+      feather.replace();
     </script>
     <!-- script boostrap -->
     <script src="vendors/boostrap/js/bootstrap.bundle.min.js"></script>
