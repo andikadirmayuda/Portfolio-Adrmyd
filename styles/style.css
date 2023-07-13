@@ -4,8 +4,9 @@
 /* Variabel */
 :root {
   --primary-color: #fb6a27;
-  --dark-color: #0f0f0f;
+  --dark-color: #010101;
   --grey-color: gray;
+  --white-color: #ffff;
 
   --h1-font-size: 40px;
   --h2-font-size: 32px;
@@ -65,7 +66,17 @@ section .section-title {
 
 /* Navbar */
 .navbar {
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgba(1, 1, 1, 0.8);
+  border-bottom: 1px solid #ffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
 }
 .navbar .nav-item .nav-link:hover,
 .navbar .nav-item .nav-link.active {
@@ -77,11 +88,14 @@ section .section-title {
 }
 
 /* Header */
+.header-section {
+  background-color: var(--dark-color);
+}
 .header-section .header-title {
   color: var(--dark-color);
 }
 .header-section .header-skill {
-  color: var(--dark-color);
+  color: var(--white-color);
 }
 
 .header-section .header-skill:hover {
@@ -95,6 +109,9 @@ section .section-title {
 }
 
 /* Portfoliio */
+.portfolio-section {
+  background-color: var(--dark-color);
+}
 .portfolio-section .card-img-top {
   height: 240px;
   width: 100%;
@@ -109,7 +126,7 @@ section .section-title {
 
 /* SKILLS */
 .skills-section {
-  background-color: #0f0f0f;
+  background-color: var(--dark-color);
 }
 
 .skills-section .progrees-bar {
@@ -127,7 +144,26 @@ section .section-title {
   width: 90%;
   border-radius: 10px;
 }
+
+.Timeline-section {
+  background-color: var(--dark-color);
+}
+.News-section {
+  background-color: var(--dark-color);
+}
+.Contact-section {
+  background-color: var(--dark-color);
+}
+
+/* Footer */
 #footer {
   text-align: center;
-  background-color: #0f0f0f;
+  background-color: var(--primary-color);
+}
+
+/* mobile phone */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
 }
