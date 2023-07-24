@@ -79,20 +79,27 @@ section .section-title {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 9999;
+  z-index: 999999;
 }
-.navbar .nav-item .nav-link:hover,
-.navbar .nav-item .nav-link.active {
-  color: var(--primary-color);
-  border-bottom: 1px solid white;
 
+.navbar .nav-item .nav-link:hover {
+  color: var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
   transition: all;
   transition-duration: 300ms;
+}
+
+.collapse ul li a {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 14px;
 }
 
 /* Header */
 .header-section {
   background-color: var(--dark-color);
+  margin-top: 1rem;
+  margin-bottom: -10rem;
 }
 .header-section .header-title {
   color: var(--dark-color);
@@ -106,11 +113,17 @@ section .section-title {
 }
 
 .header-section .header-img {
-  width: 90%;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  margin-left: 4rem;
   border-radius: 50%;
-  margin-top: 4rem;
+  width: 300px;
+  box-shadow: 0px 0px 2px 2px white;
 }
-
+.navbar .navbar-brand .navbar-toggler .navbar-toggler-icon span {
+  color: #fff;
+  z-index: 99999;
+}
 /* Portfoliio */
 .portfolio-section {
   background-color: var(--dark-color);
@@ -143,28 +156,25 @@ section .section-title {
   background-color: var(--grey-color);
 }
 
-.skills-section .skills-img {
-  width: 90%;
-  border-radius: 10px;
+.skills-section .foto img {
+  margin-top: 2rem;
+  box-shadow: 0px 0px 2px 2px white;
 }
 
-.Timeline-section {
-  background-color: var(--dark-color);
-}
-.News-section {
-  background-color: var(--dark-color);
-}
+.Timeline-section,
+.News-section,
 .Contact-section {
   background-color: var(--dark-color);
 }
 
 /* Footer */
 .footer {
+  justify-content: space-between;
   background-color: var(--dark-color);
   text-align: center;
-  padding: 1rem 0 3rem;
+  padding: 1rem 0rem 3rem;
   margin: 3rem;
-  font-size: 1rem;
+  font-size: 12px;
 }
 
 .footer .socials {
@@ -186,7 +196,7 @@ section .section-title {
 
 .footer .links a {
   color: #fff;
-  padding: 0.7rem 1rem;
+  padding: 0.1rem 0.4rem;
 }
 
 .footer .credit {
