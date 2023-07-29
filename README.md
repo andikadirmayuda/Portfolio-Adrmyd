@@ -17,6 +17,224 @@ You can my Portfolio in "https://adrmyd.000webhostapp.com/"
     <script src="https://unpkg.com/feather-icons"></script>
     <!-- css -->
     <link rel="stylesheet" href="styles/style.css" />
+    <style>
+      /* font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+/* Variabel */
+:root {
+  --primary-color: #fb6a27;
+  --dark-color: #010101;
+  --grey-color: gray;
+  --white-color: #ffff;
+
+  --h1-font-size: 40px;
+  --h2-font-size: 32px;
+  --small-font-size: 14px;
+}
+body {
+  background-color: var(--dark-color);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: var(--primary-color);
+}
+
+/* reset css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+
+/* Global css */
+section {
+  /* 70px atas bawah, 0 kanan kiri */
+  padding: 70px 0;
+}
+section .section-title {
+  font-size: var(--h2-font-size);
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.btn-orange {
+  color: var(--primary-color);
+}
+
+.text-dark {
+  color: var(--dark-color);
+}
+
+.fs-7 {
+  font-size: var(--small-font-size);
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: var(--primary-color);
+}
+/* Css Per Section */
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgba(1, 1, 1, 0.8);
+  border-bottom: 1px solid #ffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999999;
+}
+
+.navbar .nav-item .nav-link:hover {
+  color: var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+  transition: all;
+  transition-duration: 300ms;
+}
+
+.collapse ul li a {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 14px;
+}
+
+/* Header */
+.header-section {
+  background-color: var(--dark-color);
+  margin-top: 1rem;
+  margin-bottom: -10rem;
+}
+.header-section .header-title {
+  color: var(--dark-color);
+}
+.header-section .header-skill {
+  color: var(--white-color);
+}
+
+.header-section .header-skill:hover {
+  color: var(--primary-color);
+}
+
+.header-section .header-img {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  margin-left: 4rem;
+  border-radius: 50%;
+  width: 300px;
+  box-shadow: 0px 0px 2px 2px white;
+}
+.navbar .navbar-brand .navbar-toggler .navbar-toggler-icon span {
+  color: #fff;
+  z-index: 99999;
+}
+/* Portfoliio */
+.portfolio-section {
+  background-color: var(--dark-color);
+}
+.portfolio-section .card-img-top {
+  height: 240px;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio-section .card-img-top {
+    height: 100px;
+  }
+}
+
+/* SKILLS */
+.skills-section {
+  background-color: var(--dark-color);
+}
+
+.skills-section .progrees-bar {
+  width: 100%;
+  height: 10px;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+}
+
+.skills-section .progrees-bar .progrees {
+  background-color: var(--grey-color);
+}
+
+.skills-section .foto img {
+  margin-top: 2rem;
+  box-shadow: 0px 0px 2px 2px white;
+}
+
+.Timeline-section,
+.News-section,
+.Contact-section {
+  background-color: var(--dark-color);
+}
+
+/* Footer */
+.footer {
+  justify-content: space-between;
+  background-color: var(--dark-color);
+  text-align: center;
+  padding: 1rem 0rem 3rem;
+  margin: 3rem;
+  font-size: 12px;
+}
+
+.footer .socials {
+  padding: 1rem 0;
+}
+
+.footer .socials a {
+  color: #fff;
+  margin: 1rem;
+}
+.footer .socials a:hover,
+.footer .links a:hover {
+  color: var(--primary-color);
+}
+
+.footer .links {
+  margin-bottom: 1rem;
+}
+
+.footer .links a {
+  color: #fff;
+  padding: 0.1rem 0.4rem;
+}
+
+.footer .credit {
+  font-size: 0.8rem;
+}
+
+.footer .credit a {
+  color: var(--bg);
+  font-weight: 700;
+}
+
+/* mobile phone */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+    </style>
   </head>
   <body>
     <!-- NAVBAR -->
